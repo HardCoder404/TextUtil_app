@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./bg.css";
 
 const Navbar = (prop) => {
- 
+
   return (
     <div>
       <nav 
@@ -32,7 +33,7 @@ const Navbar = (prop) => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link className={`nav-link text-${prop.mode==='light'?'dark':'light'}`} to="/about">
                   About
                 </Link> 
               </li>

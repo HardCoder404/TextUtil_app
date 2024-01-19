@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.1s ease; /* Smooth transition effect */
+    background-image: url('https://cdn.pixabay.com/photo/2022/11/01/11/20/abstract-7561993_1280.png');
+  }
+  
+  /* Light mode background image */
+  body.light-mode {
+    background-image: url('https://cdn.pixabay.com/photo/2022/11/01/11/20/abstract-7561993_1280.png');
+  }
+  /* Dark mode background image */
+  body.dark-mode {
+    background-image: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700321104.jpg');
+    
+  }
+  /* Add this CSS to style the placeholder text color */
+textarea::placeholder {
+    color: #aaaaaa; /* Adjust the color to your preference */
+  }
+  
+  /* Add a specific style for the placeholder text color in dark mode */
+  body.dark-mode textarea::placeholder {
+    color: #666666; /* Adjust the color for dark mode */
+  }
+  

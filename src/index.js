@@ -4,6 +4,7 @@ import Navbar from "./Navbar.jsx";
 import Text from "./Text.js";
 import Alertmsg from "./Alertmsg.js";
 import About from "./About.jsx";
+import "./bg.css";
 import {
   BrowserRouter as Router,
   Routes,
@@ -30,16 +31,20 @@ const App = () => {
     if(mode==='light'){
       // jab dark mode hoto ye kro niche wale kaam :
         setMode('dark');
-        document.body.style.backgroundColor='#0a0541';
+        // document.body.style.backgroundColor='#0a0541';
+        document.body.classList.remove('light-mode');
+        document.body.classList.add('dark-mode');
         showAlert("DarkMode enabled","success");
-        document.title="TextUtils - Dark Mode";  // when you are switching to any particular section ..thene the title also change to that location . 
+        // document.title="TextUtils - Dark Mode";  // when you are switching to any particular section ..thene the title also change to that location . 
         
     }
     else {
         setMode('light');
-        document.body.style.backgroundColor='white';
+        // document.body.style.backgroundColor='white';
+        document.body.classList.remove('dark-mode');
+        document.body.classList.add('light-mode');
         showAlert("LightMode enabled","success");
-        document.title="TextUtils - Light Mode";
+        // document.title="TextUtils - Light Mode";
 }
   }
   return (

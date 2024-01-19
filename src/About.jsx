@@ -2,7 +2,7 @@ import React from "react";
 
 const About = (props) => {
   return (
-    <div classNameName="about-section" style={{color:props.mode==='dark'?'white':'black'}}>
+    <div classNameName="about-section" style={{color:props.mode==='dark'?'white':'white'}}>
       <h2>About us</h2>
       <p>
         Welcome to TextUtils! We are a platform that provides various text
